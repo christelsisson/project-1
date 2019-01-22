@@ -1,0 +1,543 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Italic.eot");
+  src: url("fonts/Raleway-Italic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Italic.woff2") format("woff2"),
+    url("fonts/Raleway-Italic.woff") format("woff"),
+    url("fonts/Raleway-Italic.ttf") format("truetype"),
+    url("fonts/Raleway-Italic.svg#Raleway-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Medium.eot");
+  src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Medium.woff2") format("woff2"),
+    url("fonts/Raleway-Medium.woff") format("woff"),
+    url("fonts/Raleway-Medium.ttf") format("truetype"),
+    url("fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-Light.eot");
+  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Light.woff2") format("woff2"),
+    url("fonts/Raleway-Light.woff") format("woff"),
+    url("fonts/Raleway-Light.ttf") format("truetype"),
+    url("fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway-BoldItalic.eot");
+  src: url("fonts/Raleway-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-BoldItalic.woff2") format("woff2"),
+    url("fonts/Raleway-BoldItalic.woff") format("woff"),
+    url("fonts/Raleway-BoldItalic.ttf") format("truetype"),
+    url("fonts/Raleway-BoldItalic.svg#Raleway-BoldItalic") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.eot");
+  src: url("fonts/PlayfairDisplay-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot");
+  src: url("fonts/PlayfairDisplay-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-BoldItalic.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-BoldItalic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-BoldItalic.svg#PlayfairDisplay-BoldItalic")
+      format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Bold.eot");
+  src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Bold.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic.eot");
+  src: url("fonts/PlayfairDisplay-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Italic.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Italic.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Italic.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway";
+  color: #2d2d2d;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  font-family: "Playfair Display";
+}
+
+h3 {
+  color: #e2574c;
+}
+
+h2 {
+  text-align: center;
+}
+
+.site-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+}
+
+.logo {
+  flex: 1 0 25%;
+  align-self: flex-start;
+  width: 20%;
+  margin-top: 10px;
+}
+
+.main-navigation {
+  flex: 1 0 50%;
+}
+
+.main-navigation li {
+  display: inline;
+  font-size: 15px;
+}
+
+.main-navigation li a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-navigation li a:hover {
+  color: #b64036;
+}
+
+.cart {
+  flex: 1 0 25%;
+}
+
+.banner {
+  background: url(images/banner-girl.png) no-repeat top,
+    url(images/flower-bkgd.jpg) repeat-x;
+  background-size: 16.5%, 85%;
+  background-position: top, center;
+  padding-top: 100px, 0;
+  height: 500px;
+  width: 100%;
+}
+
+.banner-text-container {
+  padding-top: 12.5%;
+  font-family: "Playfair Display";
+  font-weight: lighter;
+  font-style: normal;
+}
+
+.collection {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  align-items: center;
+}
+
+.season {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  align-items: center;
+}
+
+.about {
+  text-align: center;
+  height: 200px;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.container p {
+  font-size: 20px;
+  color: #969696;
+  font-family: "Raleway";
+  font-style: italic;
+}
+
+.products {
+  flex-flow: wrap;
+  display: flex;
+  height: 500px;
+  text-transform: uppercase;
+  font-size: 20px;
+  background-image: center;
+  background-image: cover;
+}
+
+.mens {
+  background-image: url(images/mens-category.jpg);
+  background-size: cover;
+  color: white;
+  width: 50%;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 120px;
+  font-size: 30px;
+  font-style: bold;
+  border-right: 4px;
+  border-bottom: 4px;
+  border-color: white;
+  border: solid;
+}
+
+.mens span:hover {
+  color: lightcoral;
+}
+
+.trends {
+  background-image: url(images/trends-category.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-image: center;
+  padding-top: 120px;
+  font-size: 30px;
+  border-left: 4px;
+  border-top: 4px;
+  border-color: white;
+  border: solid;
+}
+
+.trends span:hover {
+  color: lightcoral;
+}
+
+.glasses {
+  background-image: url(images/glasses-category.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  width: 25%;
+  height: cover;
+  background-repeat: no-repeat;
+  background-image: center;
+  padding-top: 120px;
+  font-size: 30px;
+  border-left: 4px;
+  border-bottom: 4px;
+  border-color: white;
+  border: solid;
+}
+
+.glasses span:hover {
+  color: lightcoral;
+}
+
+.sales {
+  background-image: url(images/sale-category.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  width: 25%;
+  height: cover;
+  background-repeat: no-repeat;
+  background-image: center;
+  padding-top: 120px;
+  font-size: 30px;
+  border-top: 4px;
+  border-top: 4px;
+  border-color: white;
+  border: solid;
+}
+
+.sales span:hover {
+  color: lightcoral;
+}
+
+.bags {
+  background-image: url(images/bags-category.jpg);
+  background-size: cover;
+  text-align: center;
+  color: white;
+  width: 25%;
+  height: cover;
+  background-repeat: no-repeat;
+  background-image: center;
+  padding-top: 120px;
+  font-size: 30px;
+  border-left: 4px;
+  border-top: 4px;
+  border-right: 4px;
+  border-color: white;
+  border: solid;
+}
+
+.bags span:hover {
+  color: lightcoral;
+}
+
+.womens {
+  background-image: url(images/womens-category.jpg);
+  background-image: cover;
+  text-align: center;
+  display: block;
+  color: white;
+  width: 50%;
+  background-repeat: no-repeat;
+  padding-top: 120px;
+  font-size: 30px;
+  border-left: 4px;
+  border-top: 4px;
+  border-color: white;
+  border: solid;
+}
+
+.womens span:hover {
+  color: lightcoral;
+}
+
+.featured {
+  width: 100%;
+  height: 500px;
+  justify-content: center;
+  text-align: center;
+}
+
+.featured h2 {
+  font-family: "Raleway";
+  font-size: 30px;
+  font-style: italic;
+}
+
+.carousel-cell {
+  height: 400px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel-cell span {
+  justify-content: center;
+}
+
+a {
+  color: orange;
+}
+
+footer {
+  background-color: #242424;
+}
+
+a.footer-email {
+  text-decoration: underline;
+}
+
+a.footer-email:hover {
+  color: #b64036;
+}
+
+.site-footer-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+  padding: 10px;
+  height: 185px;
+}
+
+.footer-text {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  color: white;
+  font-size: 12px;
+  padding-right: 15px;
+  text-transform: inherit;
+  vertical-align: baseline;
+}
+
+.newsletter {
+  background: url(images/wave-bkgd.jpg) no-repeat center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 300px;
+  color: white;
+  text-align: center;
+}
+
+.newsletter-container {
+  padding: 30px;
+}
+
+.updates {
+  font-size: 35px;
+}
+
+.newsletter p {
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 25px;
+}
+
+input[type="email"] {
+  border-radius: 25px;
+  border: 0;
+  line-height: 35px;
+  width: 300px;
+  position: relative;
+}
+
+input[type="submit"] {
+  background-color: #e2574c;
+  color: white;
+  position: absolute;
+}
+
+@media screen and (max-width: 1240px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .featured {
+    width: 50%;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+
+  .mens {
+    background-size: cover;
+    color: white;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-image: center;
+    text-align: center;
+    padding-top: 140px;
+    font-size: 35px;
+    font-style: bold;
+  }
+
+  .trends {
+    background-size: cover;
+    text-align: center;
+    color: white;
+    width: 25%;
+    background-repeat: no-repeat;
+    background-image: center;
+    padding-top: 140px;
+    font-size: 35px;
+  }
+
+  .glasses {
+    background-size: cover;
+    text-align: center;
+    color: white;
+    width: 25%;
+    height: cover;
+    background-repeat: no-repeat;
+    background-image: center;
+    padding-top: 140px;
+    font-size: 35px;
+  }
+
+  .sales {
+    background-size: cover;
+    text-align: center;
+    color: white;
+    width: 25%;
+    height: cover;
+    background-repeat: no-repeat;
+    background-image: center;
+    padding-top: 145px;
+    font-size: 35px;
+  }
+
+  .bags {
+    background-size: cover;
+    text-align: center;
+    color: white;
+    width: 25%;
+    height: cover;
+    background-repeat: no-repeat;
+    background-image: center;
+    padding-top: 140px;
+    font-size: 35px;
+  }
+
+  .womens {
+    background-size: cover;
+    text-align: center;
+    display: block;
+    color: white;
+    width: 50%;
+    height: cover;
+    background-repeat: no-repeat;
+    background-image: center;
+    padding-top: 140px;
+    font-size: 35px;
+  }
+}
